@@ -1,0 +1,89 @@
+{
+  "name": "@morioh/v-editor",
+  "description": "A rich-text editor component for Vue.js",
+  "version": "1.0.1",
+  "author": "Morioh-Lab",
+  "main": "./dist/v-editor.min.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --watch --colors",
+    "prod": "cross-env NODE_ENV=production webpack -p --watch --progress --colors",
+    "start": "node ./dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Morioh-Lab/v-editor.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Morioh-Lab/v-editor/issues"
+  },
+  "homepage": "https://github.com/Morioh-Lab/v-editor",
+  "keywords": [
+    "vue editor",
+    "vue rich text editor",
+    "mardown editor vue",
+    "WYSIWYG editor",
+    "vue WYSIWYG editor",
+    "editor",
+    "vue editor componenet",
+    "vuejs WYSIWYG editor component",
+    "medium editor",
+    "tumblr editor",
+    "tiptap editor"
+    
+  ],
+  "dependencies": {
+    "@editorjs/editorjs": "^2.17.0"
+    
+  },
+  "devDependencies": {
+    "vue": "^2.6.11",
+    "@editorjs/checklist": "^1.1.0",
+    "@editorjs/code": "^2.4.1",
+    "@editorjs/delimiter": "^1.1.0",    
+    "@editorjs/embed": "^2.2.1",
+    "@editorjs/header": "^2.4.0",
+    "@editorjs/image": "^2.3.3",
+    "@editorjs/inline-code": "^1.3.1",
+    "@editorjs/link": "^2.1.3",
+    "@editorjs/list": "^1.4.0",
+    "@editorjs/marker": "^1.2.2",
+    "@editorjs/paragraph": "^2.6.1",
+    "@editorjs/quote": "^2.3.0",
+    "@editorjs/raw": "^2.1.2",
+    "@editorjs/table": "^1.2.2",
+    "@editorjs/warning": "^1.1.1",    
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.4.2",
+    "file-loader": "^4.3.0",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-externals-plugin": "^3.8.0",
+    "html-webpack-plugin": "^3.0.6",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.2",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.3.0",
+    "vue-loader": "^15.9.0",
+    "vue-ssr-webpack-plugin": "^3.0.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
