@@ -1,7 +1,7 @@
 {
   "name": "@morioh/v-editor",
   "description": "A rich-text editor component for Vue.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Morioh-Lab",
   "main": "./dist/v-editor.min.js",
   "scripts": {
@@ -21,12 +21,12 @@
   "keywords": [
     "vue editor",
     "vue rich text editor",
-    "mardown editor vue",
+    "rich text editor vue",
     "WYSIWYG editor",
     "vue WYSIWYG editor",
     "editor",
     "vue editor componenet",
-    "vuejs WYSIWYG editor component",
+    "vue WYSIWYG editor component",
     "medium editor",
     "tumblr editor",
     "tiptap editor"

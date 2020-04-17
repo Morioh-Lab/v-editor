@@ -16,10 +16,10 @@
                 <textarea class="form-control h-500">{{value}}</textarea>
             </div>
 
-            <!-- <div class="form-group">
+            <div class="form-group">
                 <button @click="val" class="btn btn-primary">Change</button>                
 
-            </div> -->
+            </div>
 
 
         </div>

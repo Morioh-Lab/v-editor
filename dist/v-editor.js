@@ -13232,7 +13232,14 @@ __webpack_require__.r(__webpack_exports__);
   },
   watch: {
     value: function value(_new, _old) {
-      if (_new && _old && JSON.stringify(_new.blocks) != JSON.stringify(_old.blocks) && this.editor) this.editor.render(_new);
+      // if (_new && _old && JSON.stringify(_new.blocks) != JSON.stringify(_old.blocks) && this.editor) {
+      // this.editor.render(_new);
+      //}                
+      if (!this.__stated && this.editor) {
+        this.editor.render(_new);
+      }
+
+      this.__stated = false;
     }
   },
   mounted: function mounted() {
@@ -13248,7 +13255,9 @@ __webpack_require__.r(__webpack_exports__);
       onReady: function onReady() {
         _this.$emit('ready');
       },
-      onChange: function onChange() {
+      onChange: function onChange(e) {
+        _this.__stated = true;
+
         _this.editor.save().then(function (val) {
           _this.$emit('input', val);
         });

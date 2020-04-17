@@ -52,10 +52,15 @@
 
         watch: {
             value(_new, _old) {
-                if (_new && _old && JSON.stringify(_new.blocks) != JSON.stringify(_old.blocks) && this.editor)
-                    this.editor.render(_new);
+                // if (_new && _old && JSON.stringify(_new.blocks) != JSON.stringify(_old.blocks) && this.editor) {
 
-               
+                // this.editor.render(_new);
+                //}                
+
+                if (!this.__stated && this.editor) {
+                    this.editor.render(_new);
+                }
+                this.__stated = false;
             }
         },
 
@@ -70,7 +75,9 @@
                 data: this.value,
                 tools: this.tools,
                 onReady: () => { this.$emit('ready') },
-                onChange: () => {
+                onChange: (e) => {
+                    
+                    this.__stated = true;
                     this.editor.save().then(val => { this.$emit('input', val); });
                 },
 
